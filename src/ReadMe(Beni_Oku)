@@ -1,0 +1,11 @@
+
+
+   -Bu projede banka hesabı oluşturacaksınız.
+      1- Hesaplar arasında transfer yapılabilmeli. (Transfer miktarına göre bakiyeler değişmeli)
+      2- Başka hesaba transfer yapılabilmeli. (Transfer miktarına göre bakiyeler değişmeli)
+      3- Kefiliniz olmalı. (18 yaşından büyük olmalı aksi taktirde müşteriye kredi kartı tanımlanamamalı)
+
+    Projenin taslağı oluşturulmuş bir şekilde veriliyor yapılması gereken gerçek hayata uygun bir şekilde
+    kodlama yaparak bankanın müşreri hesapları programını yapmak.
+
+    İlk önce Hesap classı ile başlayın > KefilEkle Classı ile devam edin > Müsteri Classı ile projeyi tamamlayın.
