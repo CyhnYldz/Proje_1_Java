@@ -42,8 +42,7 @@ public class Musteriler {
         this.hesapNo2=randomHesapNoOlustur();
     }
     public int randomHesapNoOlustur(){
-       int hesapNo=(int)((Math.random()+1)*10000000);
-        return hesapNo;
+        return (int)((Math.random()+1)*10000000);
 
     }
     public String  medeniHalKontrol(String medeniHali) {
