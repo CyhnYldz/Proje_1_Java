@@ -35,13 +35,15 @@ public class Musteriler {
         this.ad = ad;
         this.sifre = sifre;
         this.dogumTarihi = dogumTarihi;
-        this.medeniHali = medeniHali;
+        this.medeniHali = medeniHalKontrol(medeniHali);
         this.hesapBakiye1 = hesapBakiye1;
         this.hesapBakiye2 = hesapBakiye2;
+        this.hesapNo1=randomHesapNoOlustur();
+        this.hesapNo2=randomHesapNoOlustur();
     }
-    public void randomHesapNoOlustur(){
-        this.hesapNo1=(int)((Math.random()+1)*10000000);
-        this.hesapNo2=(int)((Math.random()+1)*10000000);
+    public int randomHesapNoOlustur(){
+       int hesapNo=(int)((Math.random()+1)*10000000);
+        return hesapNo;
 
     }
     public String  medeniHalKontrol(String medeniHali) {
@@ -69,7 +71,7 @@ public class Musteriler {
 
 
         }
-        return null;}
+        return this.medeniHali=null;}
 
 
 
@@ -140,8 +142,8 @@ public class Musteriler {
 
         Scanner scan=new Scanner(System.in);
         Scanner intscan=new Scanner(System.in);
-        medeniHalKontrol(medeniHali);
-        randomHesapNoOlustur();
+
+
 //        KefilEkle kefil=new KefilEkle(kefilTamAd,kefilYasi);
 //        this.kefilYasi=kefil.getYas();
         String cevap;
@@ -157,8 +159,7 @@ public class Musteriler {
             System.out.println("Transfer etmek istediğiniz miktarı giriniz : ");
             miktar=intscan.nextInt();
             Hesap.baskaHesabaHavale(object1,object2,miktar);
-            object1.randomHesapNoOlustur();
-            object2.randomHesapNoOlustur();
+
         }
     }
     // 12. Adım

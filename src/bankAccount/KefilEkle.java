@@ -53,11 +53,11 @@ public class KefilEkle {
 //           (Musteriler classından yasKontrol() methodunu kullanın)
 
     boolean kefilYasKontrol(String kefilYas){
-        if(Musteriler.yasKontrol(kefilYas).equalsIgnoreCase("kredi kartı alabilirsiniz")){
+        if(Musteriler.yasKontrol(kefilYas).equalsIgnoreCase("Kredi kartı alabilirsiniz")){
             return true;
         }
 
-        else return false;
+        else System.out.println("kefil yaşı 18 yaşından büyük olmalıdır");return false;
     }
 
 
